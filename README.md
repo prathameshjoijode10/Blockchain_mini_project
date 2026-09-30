@@ -15,6 +15,31 @@ This example project includes:
 
 ## Usage
 
+### Run the Project Locally
+
+Install the dependencies and compile and test the contracts:
+
+```shell
+npm install
+npx hardhat compile
+npx hardhat test
+npx hardhat node
+```
+
+Keep the Hardhat node running, then open a second terminal and deploy the contracts:
+
+```shell
+npx hardhat run scripts/deploy.js --network localhost
+```
+
+In another terminal, install the frontend dependencies and start the development server:
+
+```shell
+cd frontend
+npm install
+npm run dev
+```
+
 ### Running Tests
 
 To run all the tests in the project, execute the following command:
